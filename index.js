@@ -189,6 +189,7 @@
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
+    updatePlanMarker(scene);
   }
 
   function updateSceneName(scene) {
@@ -385,6 +386,37 @@
     }
     return null;
   }
+
+
+// LAYOUT PLAN START
+
+var planMarkers = document.querySelectorAll('.plan-marker');
+
+for (var i = 0; i < planMarkers.length; i++) {
+  planMarkers[i].addEventListener('click', function() {
+    var sceneId = this.getAttribute('data-scene');
+    var selectedScene = findSceneById(sceneId);
+
+    if (selectedScene) {
+      switchScene(selectedScene);
+    }
+  });
+}
+
+function updatePlanMarker(scene) {
+  for (var i = 0; i < planMarkers.length; i++) {
+    var markerSceneId = planMarkers[i].getAttribute('data-scene');
+
+    if (markerSceneId === scene.data.id) {
+      planMarkers[i].classList.add('active');
+    } else {
+      planMarkers[i].classList.remove('active');
+    }
+  }
+}
+
+// LAYOUT PLAN END
+
 
   // Display the initial scene.
   switchScene(scenes[0]);

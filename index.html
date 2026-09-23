@@ -19,52 +19,52 @@
         <li class="text">LIFT LOBBY</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="1-foyer">
-        <li class="text">FOYER</li>
+      <a href="javascript:void(0)" class="scene" data-id="1-entrance-foyer">
+        <li class="text">ENTRANCE FOYER</li>
       </a>
     
       <a href="javascript:void(0)" class="scene" data-id="2-living-room">
         <li class="text">LIVING ROOM</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="3-open-work-space">
-        <li class="text">OPEN WORK SPACE</li>
+      <a href="javascript:void(0)" class="scene" data-id="3-open-working-space">
+        <li class="text">OPEN WORKING SPACE</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="4-dining">
-        <li class="text">DINING</li>
+      <a href="javascript:void(0)" class="scene" data-id="4-dining-area">
+        <li class="text">DINING AREA</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="5-outdoor">
-        <li class="text">OUTDOOR</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="6-kitchen">
+      <a href="javascript:void(0)" class="scene" data-id="5-kitchen">
         <li class="text">KITCHEN</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-swimming-pool-area">
+        <li class="text">SWIMMING POOL AREA</li>
       </a>
     
       <a href="javascript:void(0)" class="scene" data-id="7-master-bedroom">
         <li class="text">MASTER BEDROOM</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="8-walkin-wardrobe">
-        <li class="text">WALKIN WARDROBE</li>
+      <a href="javascript:void(0)" class="scene" data-id="8-walk-in-wardrobe">
+        <li class="text">WALK-IN WARDROBE</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="9-guest-room-1">
+      <a href="javascript:void(0)" class="scene" data-id="9-master-bathroom">
+        <li class="text">MASTER BATHROOM</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-guest-room-1">
         <li class="text">GUEST ROOM 1</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="10-guest-room-2">
+      <a href="javascript:void(0)" class="scene" data-id="11-guest-room-2">
         <li class="text">GUEST ROOM 2</li>
       </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="11-guest-room-3">
+      <a href="javascript:void(0)" class="scene" data-id="12-guest-room-3">
         <li class="text">GUEST ROOM 3</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="12-master-bathroom">
-        <li class="text">MASTER BATHROOM</li>
       </a>
     
   </ul>
@@ -107,6 +107,86 @@
 <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
   <img class="icon" src="img/minus.png">
 </a>
+
+
+<!-- LAYOUT PLAN START -->
+
+<div id="floorPlan">
+  <div class="floor-plan-title">LAYOUT PLAN</div>
+
+  <div class="floor-plan-image">
+    <img src="img/layout-plan.png" alt="Layout Plan">
+
+    <button class="plan-marker"
+      data-scene="0-lift-lobby"
+      style="left: 55.5%; top: 49.5%;"
+      title="Lift Lobby">1</button>
+
+    <button class="plan-marker"
+      data-scene="1-entrance-foyer"
+      style="left: 42.8%; top: 48.9%;"
+      title="Entrance Foyer">2</button>
+
+    <button class="plan-marker"
+      data-scene="2-living-room"
+      style="left: 26.1%; top: 43.5%;"
+      title="Living Room">3</button>
+
+    <button class="plan-marker"
+      data-scene="3-open-working-space"
+      style="left: 32.7%; top: 68.4%;"
+      title="Open Working Space">4</button>
+
+    <button class="plan-marker"
+      data-scene="4-dining-area"
+      style="left: 34.8%; top: 22.8%;"
+      title="Dining Area">5</button>
+
+    <button class="plan-marker"
+      data-scene="5-kitchen"
+      style="left: 47.1%; top: 23.6%;"
+      title="Kitchen">6</button>
+
+    <button class="plan-marker"
+      data-scene="6-swimming-pool-area"
+      style="left: 11.7%; top: 15.3%;"
+      title="Swimming Pool Area">7</button>
+
+    <button class="plan-marker"
+      data-scene="7-master-bedroom"
+      style="left: 85.5%; top: 70%;"
+      title="Master Bedroom">8</button>
+
+    <button class="plan-marker"
+      data-scene="8-walk-in-wardrobe"
+      style="left: 89.3%; top: 52.5%;"
+      title="Walk-in Wardrobe">9</button>
+
+    <button class="plan-marker"
+      data-scene="9-master-bathroom"
+      style="left: 74.1%; top: 79.1%;"
+      title="Master Bathroom">10</button>
+
+    <button class="plan-marker"
+      data-scene="10-guest-room-1"
+      style="left: 60%; top: 81.6%;"
+      title="Guest Room 1">11</button>
+
+    <button class="plan-marker"
+      data-scene="11-guest-room-2"
+      style="left: 46%; top: 81.5%;"
+      title="Guest Room 2">12</button>
+
+    <button class="plan-marker"
+      data-scene="12-guest-room-3"
+      style="left: 67.8%; top: 23.7%;"
+      title="Guest Room 3">13</button>
+
+  </div>
+</div>
+
+<!-- LAYOUT PLAN END -->
+
 
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>

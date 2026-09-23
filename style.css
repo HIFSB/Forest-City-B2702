@@ -828,3 +828,83 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+
+/* LAYOUT PLAN START */
+
+#floorPlan {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 280px;
+  padding: 8px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.floor-plan-title {
+  margin-bottom: 6px;
+  color: #222222;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.floor-plan-image {
+  position: relative;
+  width: 100%;
+}
+
+.floor-plan-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.plan-marker {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #e53935;
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.plan-marker:hover {
+  background: #ff9800;
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.plan-marker.active {
+  background: #ff9800;
+  box-shadow:
+    0 0 0 3px rgba(255, 152, 0, 0.35),
+    0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  #floorPlan {
+    right: 10px;
+    bottom: 10px;
+    width: 190px;
+  }
+
+  .plan-marker {
+    width: 24px;
+    height: 24px;
+    border-width: 2px;
+    font-size: 9px;
+  }
+}
+
+/* LAYOUT PLAN END */
